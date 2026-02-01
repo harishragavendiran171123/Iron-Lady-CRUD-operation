@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Iron Lady Student Management</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Iron Lady Internal Student Management System</h2>
+
+<div class="form">
+    <input id="name" placeholder="Student Name">
+    <span id="nameError" class="error"></span>
+
+    <input id="email" placeholder="Email">
+    <span id="emailError" class="error"></span>
+
+    <input id="goal" placeholder="Career Goal (AI, Tech, Internship)">
+    <span id="goalError" class="error"></span>
+
+    <button onclick="addStudent()">Add Student</button>
+    <button onclick="updateStudent()">Update Student</button>
+</div>
+
+
+<table>
+<thead>
+<tr>
+<th>ID</th><th>Name</th><th>Email</th><th>Goal</th><th>Recommended Program</th><th>Action</th>
+</tr>
+</thead>
+<tbody id="studentTable"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
